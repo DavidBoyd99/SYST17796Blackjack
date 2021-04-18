@@ -25,7 +25,7 @@ public class Blackjack {
         System.out.println(" - If you are closer to 21 than the dealer, then you win the round, and get double the credits you bet");
         System.out.println(" - You are out of the game once your credits reach 0, the last remaining player wins!");
         System.out.println("");
-        System.out.print("Enter the number of players (up to 4) : ");
+        System.out.print("Enter the number of players (min 2, up to 4) : ");
         int numPlayers = input.nextInt();
         System.out.println();
         

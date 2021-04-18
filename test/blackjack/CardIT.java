@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package blackjack;
 
 import org.junit.After;
@@ -12,10 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author david
- */
+
 public class CardIT {
     
     public CardIT() {
@@ -43,12 +36,11 @@ public class CardIT {
     @Test
     public void testGetSuit() {
         System.out.println("getSuit");
-        Card instance = null;
-        String expResult = "";
+        Card instance = new Card("Hearts", 10);
+        String expResult = "Hearts";
         String result = instance.getSuit();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -57,12 +49,11 @@ public class CardIT {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Card instance = null;
-        String expResult = "";
+        Card instance = new Card("Hearts", 10);
+        String expResult = "10 of Hearts";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -71,12 +62,11 @@ public class CardIT {
     @Test
     public void testGetValueName() {
         System.out.println("getValueName");
-        Card instance = null;
-        String expResult = "";
+        Card instance = new Card("Hearts", 10);
+        String expResult = "Ten";
         String result = instance.getValueName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
